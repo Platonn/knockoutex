@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Knockoutex proof-of-concept</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div>
+	<h4 data-bind="click: function(){debugger}">Person:</h4>
+	<span data-bind="visible: !isEditMode()">
+		<span data-bind="text: globalState().person().firstname"></span>
+		<span data-bind="text: globalState().person().surname"></span>
+		<button data-bind="click: startEditMode, disable: isEditDisabled">Edit</button>
+	</span>
+	<form data-bind="visible: isEditMode">
+		<input data-bind="value: formState().person().firstname" placeholder="firstname"/>
+		<input data-bind="value: formState().person().surname" placeholder="surname"/>
+		<button data-bind="click: saveChanges">Save Changes</button>
+	</form>
+	</div>
+
+	<div>
+	<h4>Todos:</h4>
+	<ul data-bind="foreach: {data: globalState().todos, as: 'todo'}">
+		<li data-bind="text: todo.name, css:{'done':todo.done }, click: function() { $parent.toggleDone($index) }"></li>
+	</ul>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-debug.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

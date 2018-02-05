@@ -1,0 +1,17 @@
+li {
+  list-style-type: circle;
+}
+
+li.done {
+  color: green;
+  list-style-type: disc;
+}
+
+div {
+  padding-bottom: 1em;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

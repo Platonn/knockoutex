@@ -1,0 +1,16 @@
+{
+  "name": "knockoutex",
+  "version": "1.0.0",
+  "description": "Reactive Store implemented using Knockout.js' observables - mimics Vuex 3.0.1 Edit",
+  "main": "index.js",
+  "repository": "https://github.com/Platonn/knockoutex.git",
+  "author": "Platonn <platonn@platonn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "knockout": "^3.4.2"
+  },
+  "devDependencies": {
+    "connect": "^3.6.5",
+    "serve-static": "^1.13.1"
+  }
+}
