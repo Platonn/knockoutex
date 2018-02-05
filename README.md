@@ -18,7 +18,7 @@ Run local server
 node server.js
 ```
 
-Open proof of concept website in browser:
+Open proof of concept website in browser
 ```
 http://localhost:8080/proof-of-concept/
 ```
