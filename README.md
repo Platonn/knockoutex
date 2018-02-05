@@ -2,27 +2,23 @@
 
 Reactive Store implemented using Knockout.js' observables. The API mimics Vuex 3.0.1
 
-> Currently it's in the proof of concept phase.
+> Proof of concept
 
 ## Getting Started
 
 ### Installing
 
-Install node packages:
-
+Install node packages
 ```
-yarn install        # or 'npm install'
-
+yarn install
 ```
 
-Run local server:
-
+Run local server
 ```
 node server.js
 ```
 
-Open website in browser:
-
+Open proof of concept website in browser:
 ```
 http://localhost:8080/proof-of-concept/
 ```
